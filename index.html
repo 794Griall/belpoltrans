@@ -1,6 +1,265 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BelPolTrans Sp. z o.o. | Международные автоперевозки по Европе
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BelPolTrans Sp. z o.o. | International Road Transport Europe</title>
+<meta name="description" content="BelPolTrans Sp. z o.o. — международные грузоперевозки по Европе. FTL и LTL, автопарк Euro 6, страхование CMR, телематика 24/7. Głogów, Польша.">
+<meta property="og:title" content="BelPolTrans — международные грузоперевозки по Европе">
+<meta property="og:description" content="FTL / LTL, автопарк Euro 6, страхование CMR, телематика 24/7.">
+<meta property="og:image" content="logo.jpg">
+<meta name="theme-color" content="#062a30">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"BelPolTrans Sp. z o.o.","url":"https://belpoltrans.onrender.com","logo":"logo.jpg","email":"office@belpoltrans.pl","telephone":"+48530520122","taxID":"PL8992995590","address":{"@type":"PostalAddress","streetAddress":"ul. Kasztelańska 7/10","postalCode":"67-200","addressLocality":"Głogów","addressCountry":"PL"}}
+</script>
+<style>
+:root{--bg:#062a30;--bg2:#0a373e;--bg3:#04202a;--line:#1b4a50;--teal:#2fb8a3;--teal2:#4fd0bb;--ink:#eef5f4;--muted:#9bbcb9}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Montserrat,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--teal2);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+svg.i{width:28px;height:28px;stroke:var(--teal);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+.top{background:var(--bg3);font-size:.82rem;color:var(--muted);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.top a{text-decoration:none}.top a:hover{color:var(--ink)}
+header{position:sticky;top:0;background:rgba(6,42,48,.95);backdrop-filter:blur(8px);z-index:20;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:44px}.brand b{font-size:1.15rem;letter-spacing:.07em}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:500}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--teal);color:#032126!important;font-weight:600;text-decoration:none;padding:14px 28px;border-radius:6px;font-size:.95rem;border:0;cursor:pointer;font-family:inherit;transition:background .2s}
+.btn:hover{background:var(--teal2)}
+.btn.ghost{background:transparent;color:var(--ink)!important;border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--teal)}
+nav .btn{padding:9px 18px}
+
+.hero{padding:84px 0 92px;background:radial-gradient(900px 480px at 88% 10%,#0f5157 0%,transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+h1{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.12;font-weight:700;letter-spacing:-.015em;margin-bottom:22px;animation:rise .8s both}
+.lead{color:var(--muted);font-size:1.08rem;max-width:33em;margin-bottom:34px;animation:rise .8s .12s both}
+.actions{display:flex;gap:14px;flex-wrap:wrap;animation:rise .8s .22s both}
+.tag{margin-top:38px;color:var(--teal);font-style:italic;animation:rise .8s .3s both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.map{width:100%;height:auto}
+.map .r{fill:none;stroke:var(--teal);stroke-width:1.4;stroke-dasharray:5 6;opacity:.75}
+.map .n{fill:var(--bg);stroke:var(--teal2);stroke-width:2}
+.map .h{fill:var(--teal)}
+.map .p{fill:none;stroke:var(--teal);opacity:.5}
+.map text{fill:var(--ink);font-size:13px;font-weight:600;font-family:inherit}
+
+.stats{background:var(--bg2);border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 22px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-size:1.9rem;font-weight:700;color:var(--teal2);line-height:1.2}
+.stat span{color:var(--muted);font-size:.88rem}
+
+section{padding:88px 0}
+.title{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:40em;margin-bottom:46px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:28px;transition:border-color .2s}
+.card:hover{border-color:var(--teal)}
+.card h3{font-size:1.1rem;margin:16px 0 8px;font-weight:600}
+.card p{color:var(--muted);font-size:.94rem}
+.alt{background:var(--bg3);border-block:1px solid var(--line)}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:0 24px 0 0;counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--teal);color:#032126;font-weight:700;margin-bottom:18px;box-shadow:0 0 0 6px var(--bg3)}
+.steps::before{content:"";position:absolute;top:22px;left:22px;right:40px;border-top:1px dashed var(--teal);opacity:.5}
+.step h3{font-size:1.02rem;margin-bottom:6px}.step p{color:var(--muted);font-size:.92rem}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.checks{list-style:none;padding:0;display:grid;gap:16px}
+.checks li{padding-left:30px;position:relative;color:var(--muted)}
+.checks li b{color:var(--ink);display:block;font-weight:600}
+.checks li::before{content:"";position:absolute;left:0;top:7px;width:14px;height:8px;border-left:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:rotate(-45deg)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:14px 24px;font-size:.94rem}
+dt{color:var(--muted)}dd{font-weight:500}
+.panel{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:32px}
+.panel h3{margin-bottom:20px;font-size:1.1rem}
+
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+label{font-size:.82rem;color:var(--muted);display:grid;gap:6px;font-weight:500}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);border-color:var(--teal)}
+textarea{min-height:90px;resize:vertical}
+.note{font-size:.8rem;color:var(--muted)}
+
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--teal);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--muted);margin-top:12px;max-width:46em}
+
+.contact address{font-style:normal;color:var(--muted);line-height:2.1}
+.contact address a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+footer{background:var(--bg3);border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+
+@media(max-width:900px){
+  .hero{padding:52px 0 60px}.hero .wrap,.two{grid-template-columns:1fr;gap:36px}
+  .stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0;padding-left:0}
+  .steps{grid-template-columns:1fr 1fr;gap:32px 0}.steps::before{display:none}
+  nav a:not(.btn){display:none}section{padding:60px 0}.top .wrap span:last-child{display:none}
+}
+@media(max-width:560px){form{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l3 3v4h-7M6 18.5a1.5 1.5 0 1 0 0 .01M16 18.5a1.5 1.5 0 1 0 0 .01"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10"/></symbol>
+<symbol id="route" viewBox="0 0 24 24"><path d="M6 19a2 2 0 1 0 0 .01M18 5a2 2 0 1 0 0 .01M8 19h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM8.5 12l2.5 2.5 4.5-5"/></symbol>
+</defs></svg>
+
+<div class="top"><div class="wrap">
+  <span>PL &amp; EU CARRIER · 67-200 Głogów, ul. Kasztelańska 7/10</span>
+  <span><a href="tel:+48530520122">+48 530 520 122</a> &nbsp;|&nbsp; <a href="mailto:office@belpoltrans.pl">office@belpoltrans.pl</a></span>
+</div></div>
+
+<header><div class="wrap bar">
+  <a class="brand" href="#top" aria-label="BelPolTrans — на главную"><img src="icon.png" alt=""><b>BELPOLTRANS</b></a>
+  <nav aria-label="Основное меню">
+    <a href="#services">Услуги</a><a href="#process">Как мы работаем</a><a href="#carrier">О компании</a><a href="#faq">Вопросы</a><a href="#quote">Контакты</a>
+    <a class="btn" href="#quote">Запросить цену</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Международные грузоперевозки по Европе</h1>
+    <p class="lead">Комплектные и сборные автоперевозки (FTL / LTL). Современный автопарк Euro 6, страхование ответственности CMR и телематика 24/7.</p>
+    <div class="actions">
+      <a class="btn" href="#quote">Запросить цену</a>
+      <a class="btn ghost" href="https://wa.me/48530520122" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+    <p class="tag">We are always there where they are waiting for us</p>
+  </div>
+  <svg class="map" viewBox="0 0 480 400" role="img" aria-label="Схема маршрутов из Głogów по Европе">
+    <circle class="p" cx="250" cy="170" r="60"/><circle class="p" cx="250" cy="170" r="110"/><circle class="p" cx="250" cy="170" r="160"/>
+    <path class="r" d="M250 170 Q170 90 90 70"/><path class="r" d="M250 170 Q150 190 60 250"/>
+    <path class="r" d="M250 170 Q260 280 230 360"/><path class="r" d="M250 170 Q340 120 420 90"/><path class="r" d="M250 170 Q350 230 430 290"/>
+    <circle class="n" cx="90" cy="70" r="6"/><circle class="n" cx="60" cy="250" r="6"/><circle class="n" cx="230" cy="360" r="6"/><circle class="n" cx="420" cy="90" r="6"/><circle class="n" cx="430" cy="290" r="6"/>
+    <circle class="h" cx="250" cy="170" r="10"/><circle class="p" cx="250" cy="170" r="18" style="opacity:.8"/>
+    <text x="268" y="160">Głogów</text>
+  </svg>
+</div></div>
+
+<div class="stats"><div class="wrap">
+  <div class="stat"><b>Euro 6</b><span>современный автопарк</span></div>
+  <div class="stat"><b>CMR</b><span>страхование ответственности</span></div>
+  <div class="stat"><b>24/7</b><span>телематический мониторинг</span></div>
+  <div class="stat"><b>13,6 м</b><span>Standard и Mega, Code XL</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2 class="title">Наши услуги</h2>
+  <p class="sub">Перевозим грузы по Польше и Европе: от одной паллеты до полной загрузки полуприцепа.</p>
+  <div class="grid">
+    <div class="card"><svg class="i"><use href="#truck"/></svg><h3>FTL — комплектные грузы</h3><p>Стандартные и Мега полуприцепы 13,6 м (Code XL).</p></div>
+    <div class="card"><svg class="i"><use href="#box"/></svg><h3>LTL — сборные грузы</h3><p>Доставка небольших партий: вы платите только за своё место в машине.</p></div>
+    <div class="card"><svg class="i"><use href="#route"/></svg><h3>Прямые рейсы</h3><p>Оптимизированное расписание без лишних перегрузок.</p></div>
+    <div class="card"><svg class="i"><use href="#shield"/></svg><h3>Безопасность</h3><p>Телематический мониторинг движения 24/7 и страхование ответственности CMR.</p></div>
+  </div>
+</div></section>
+
+<section id="process" class="alt"><div class="wrap">
+  <h2 class="title">Как мы работаем</h2>
+  <p class="sub">Четыре шага от заявки до доставки.</p>
+  <div class="steps">
+    <div class="step"><h3>Заявка</h3><p>Вы присылаете маршрут, тип и вес груза.</p></div>
+    <div class="step"><h3>Расчёт</h3><p>Мы подбираем транспорт и называем стоимость.</p></div>
+    <div class="step"><h3>Рейс</h3><p>Загрузка и перевозка под контролем телематики.</p></div>
+    <div class="step"><h3>Доставка</h3><p>Выгрузка у получателя и закрывающие документы.</p></div>
+  </div>
+</div></section>
+
+<section id="carrier"><div class="wrap two">
+  <div>
+    <h2 class="title">Почему BelPolTrans</h2>
+    <p class="sub">Зарегистрированный польский перевозчик с понятными условиями.</p>
+    <ul class="checks">
+      <li><b>Современный автопарк Euro 6</b>Транспорт соответствует актуальным экологическим требованиям ЕС.</li>
+      <li><b>Груз застрахован по CMR</b>Ответственность перевозчика застрахована.</li>
+      <li><b>Контроль рейса 24/7</b>Движение автомобиля отслеживается телематикой.</li>
+      <li><b>Без лишних перегрузок</b>Прямые рейсы по оптимизированному расписанию.</li>
+    </ul>
+  </div>
+  <div class="panel">
+    <h3>Данные перевозчика</h3>
+    <dl>
+      <dt>Компания</dt><dd>BelPolTrans Sp. z o.o.</dd>
+      <dt>NIP</dt><dd>PL8992995590</dd>
+      <dt>KRS</dt><dd>0001110190</dd>
+      <dt>REGON</dt><dd>528896980</dd>
+      <dt>Адрес</dt><dd>ul. Kasztelańska 7/10<br>67-200 Głogów, Polska</dd>
+      <dt>Телефон</dt><dd><a href="tel:+48530520122">+48 530 520 122</a></dd>
+      <dt>E-mail</dt><dd><a href="mailto:office@belpoltrans.pl">office@belpoltrans.pl</a></dd>
+    </dl>
+  </div>
+</div></section>
+
+<section id="quote" class="alt"><div class="wrap two">
+  <div class="contact">
+    <h2 class="title">Запросить цену</h2>
+    <p class="sub">Заполните форму — запрос откроется в WhatsApp, и мы ответим с расчётом.</p>
+    <address>
+      BelPolTrans Sp. z o.o.<br>ul. Kasztelańska 7/10, 67-200 Głogów<br>
+      <a href="tel:+48530520122">+48 530 520 122</a><br>
+      <a href="mailto:office@belpoltrans.pl">office@belpoltrans.pl</a>
+    </address>
+  </div>
+  <form id="qf" class="panel">
+    <label>Откуда<input name="from" required placeholder="Город, страна"></label>
+    <label>Куда<input name="to" required placeholder="Город, страна"></label>
+    <label>Тип перевозки<select name="type"><option>FTL</option><option>LTL</option><option>Пока не знаю</option></select></label>
+    <label>Вес, кг<input name="w" inputmode="numeric" placeholder="например, 12000"></label>
+    <label class="full">Описание груза<textarea name="c" placeholder="Что везём, упаковка, дата загрузки"></textarea></label>
+    <label class="full">Ваше имя и компания<input name="n" required></label>
+    <button class="btn full" type="submit">Отправить в WhatsApp</button>
+    <p class="note full">Данные никуда не сохраняются — форма только формирует сообщение.</p>
+  </form>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:860px">
+  <h2 class="title">Частые вопросы</h2>
+  <p class="sub" style="margin-bottom:24px">Коротко о том, как устроена перевозка.</p>
+  <details><summary>Чем FTL отличается от LTL?</summary><p>FTL — вы занимаете весь полуприцеп, груз едет напрямую. LTL — ваш груз едет вместе с другими, и вы оплачиваете только занятое место.</p></details>
+  <details><summary>Какие данные нужны для расчёта?</summary><p>Адреса загрузки и выгрузки, вес и габариты груза, тип упаковки и желаемая дата загрузки.</p></details>
+  <details><summary>Застрахован ли груз?</summary><p>Мы страхуем ответственность перевозчика по CMR. Подробности условий уточняйте при оформлении заявки.</p></details>
+  <details><summary>Можно ли следить за рейсом?</summary><p>Движение автомобилей контролируется телематикой 24/7. По запросу уточним статус вашего рейса.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>BelPolTrans Sp. z o.o. | office@belpoltrans.pl | +48 530 520 122</span>
+  <span>&copy; 2026 Все права защищены.</span>
+</div></footer>
+
+<a class="btn wa" href="https://wa.me/48530520122" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+document.getElementById('qf').addEventListener('submit',function(e){
+  e.preventDefault();var f=new FormData(e.target);
+  var t='Запрос на перевозку\nОткуда: '+f.get('from')+'\nКуда: '+f.get('to')+'\nТип: '+f.get('type')+'\nВес: '+(f.get('w')||'-')+' кг\nГруз: '+(f.get('c')||'-')+'\nКонтакт: '+f.get('n');
+  window.open('https://wa.me/48530520122?text='+encodeURIComponent(t),'_blank','noopener');
+});
+</script>
+</body>
+</html>
